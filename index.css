@@ -156,7 +156,8 @@
         height: 4px;
         background-color: #276EF1;
         margin-top: 5px;
-        margin-left: 185px;
+        margin-left: 155px;
+        align-items: center;
 
     }
 
@@ -769,7 +770,7 @@
         height: 4px;
         background-color: #276EF1;
         margin-top: 5px;
-        margin-left: 600px;
+        margin-left: 530px;
 
     }
 
