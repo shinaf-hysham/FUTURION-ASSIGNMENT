@@ -32,10 +32,16 @@
     .videotitle {
         color: white;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 800;
 
     }
+
+    .dropdown-menu{
+        margin-left: -15px;
+        background-color: #0B3CC1;
+    }
+
 
     .card-img-overlay {
         text-align: center;
@@ -50,8 +56,9 @@
 
     .videotext {
         color: white;
-        font-size: 17px;
-        font-weight: 400;
+        font-size: 19px;
+        font-weight: 600;
+        text-align: left;
     }
 
     .videobtn {
@@ -260,11 +267,12 @@
     .hometext>h3 {
         color: #0B3CC1;
         font-weight: bold;
+        text-align: left;
     }
 
     .hometext>p {
         color: gray;
-        text-align: center;
+        text-align: left;
     }
 
     .homecard6 {
@@ -296,9 +304,8 @@
 
     .homecard6button {
         color: #0B3CC1;
-        width: 285px;
-        margin-top: 15px;
-        margin-right: 30px;
+        width: 150px
+       
     }
 
     .under4b>.row>.col-sm-6 {
@@ -360,6 +367,10 @@
         color: black;
         font-weight: normal;
         font-size: 15px;
+    }
+    card1{
+        width: 170px;
+
     }
 
     .under5a {
@@ -660,6 +671,11 @@
         padding-top: 250px;
         text-align: center;
 
+    }
+
+    .dropdown-menu{
+        margin-left: -75px;
+        background-color: #0B3CC1;
     }
 
     .videotitle {
