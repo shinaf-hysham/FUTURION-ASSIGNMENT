@@ -29,6 +29,49 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .maincard {
+        /* height: 670px; */
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .rightarrow {
+        color: blue;
+        font-weight: 100;
+        margin-top: 20px;
+        position: absolute;
+
+    }
+
+    .detailsbtn {
+        background-color: white;
+        color: blue;
+        height: 35px;
+    }
+
+    .cardbluetext {
+        color: #0B3CC1;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .cardmaintext {
+        color: gray;
+        font-size: 16px;
+    }
+
+    .maintitle {
+        color: rgb(58, 58, 58);
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .cardimage {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     .videotitle {
         color: white;
         font-family: 'Times New Roman', Times, serif;
@@ -37,18 +80,18 @@
 
     }
 
-    .a > h1 {
-    font-size: 48px;
-    font-weight: 800;
-    color: #1662f6;
-    text-align: center;
-}
+    .a>h1 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #1662f6;
+        text-align: center;
+    }
 
-.p1{
-    text-align: center;
-    font-size: 22px;
-    
-}
+    .p1 {
+        text-align: center;
+        font-size: 22px;
+
+    }
 
     .dropdown-menu {
         margin-left: -15px;
@@ -176,7 +219,7 @@
         height: 4px;
         background-color: #276EF1;
         margin-top: 5px;
-        margin-left: 120px;
+        margin-left: 140px;
         align-items: center;
 
     }
@@ -680,28 +723,73 @@
 
 
 @media only screen and (min-width: 992px) {
-.a > h1 {
-    font-size: 48px;
-    font-weight: 800;
-    color: #1662f6;
-    text-align: center;
-}
+    .a>h1 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #1662f6;
+        text-align: center;
+    }
 
-.p1{
-    text-align: center;
-    font-size: 22px;
+    .maincard {
+        height: 670px;
+        margin-top: 20px;
+    }
 
-}
+    .rightarrow {
+        color: blue;
+        font-weight: 100;
+        margin-top: 20px;
+        position: absolute;
+
+    }
+
+    .detailsbtn {
+        background-color: white;
+        color: blue;
+        height: 35px;
+    }
+
+
+    .cardimage {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .cardbluetext {
+        color: #1645c9;
+        font-size: 18px;
+    }
+
+    .maintitle {
+        color: rgb(58, 58, 58);
+        font-weight: 700;
+
+    }
+
+    .cardmaintext {
+        color: gray;
+        font-size: 16px;
+        text-align: left;
+    }
 
 
 
-.searchbar{
-    width: 500px;
-    padding: 12px 12px;
-    height: 55px;
-    border-radius: 50px;
-    border: 2px solid #3a3aff;;
-}
+    .p1 {
+        text-align: center;
+        font-size: 22px;
+
+    }
+
+
+
+    .searchbar {
+        width: 500px;
+        padding: 12px 12px;
+        height: 55px;
+        border-radius: 50px;
+        border: 2px solid #3a3aff;
+        ;
+    }
 
     .card-img-overlay {
         padding-top: 250px;
