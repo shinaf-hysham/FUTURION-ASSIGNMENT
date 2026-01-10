@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project Card Modal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f6f8f6;
+    }
+
+    .project-card {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .project-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.08);
+    }
+
+    .project-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <!-- Project Card -->
+        <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Modern Garden"
+          data-img="img/blog1.jpeg" data-description="Hi this is my data-description">
+
+          <img src="img/blog1.jpeg" class="project-img" alt="Modern Zen Garden">
+          <div class="project-overlay">Modern Garden</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <!-- Project Card -->
+        <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Modern Blog"
+          data-img="img/blog2.jpeg">
+
+          <img src="img/blog2.jpeg" class="project-img" alt="Modern Zen Garden">
+
+          <div class="project-overlay">Modern Blog</div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-responsive">
+      <div class="modal-content">
+        <button type="button" class="btn-close ms-auto m-3" data-bs-dismiss="modal"></button>
+
+        <div class="modal-body p-0 text-center">
+          <img id="modalImage" src="" alt="" class="img-fluid w-100">
+          <div class="p-4">
+            <h4 id="modalTitle" class="fw-bold"></h4>
+            <p class="text-muted mt-2" id="mydesc">
+              Premium landscaping design crafted with precision, aesthetics, and sustainability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+
+  <p id="myPara">click</p>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <script>
+    const projectModal = document.getElementById('projectModal');
+
+    projectModal.addEventListener('show.bs.modal', function (event) {
+      const trigger = event.relatedTarget;
+
+      const title = trigger.getAttribute('data-title');
+
+      const img = trigger.getAttribute('data-img');
+      const jaseer = trigger.getAttribute('data-description');
+
+
+
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = img;
+      document.getElementById('mydesc').innerText = jaseer;
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-lg-4" data-name="GATE VALVES">
+
+  <div class="card maincard">
+    <img class="cardimage" src="/img/product 1.jpg" alt="Card image">
+    <div class="card-body">
+      <h5 class="cardbluetext">Resilient Seated</h5>
+      <h4 class="card-title maintitle">GATE VALVES</h4>
+      <p class="card-text cardmaintext">RESILIENT SEATED GATE VALVES High-<br>performance industrial
+        pumps
+        for various <br> applications, including water supply,<br> wastewater management, and
+        chemical <br>
+        processing.</p>
+      <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="myModal">View Details</a>
+      <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 " data-name="GATE VALVES">
+
+  <div class="card maincard">
+    <img class="cardimage" src="/img/product 2.jpg" alt="Card image">
+    <div class="card-body">
+      <h5 class="cardbluetext">Plunger Flow</h5>
+      <h4 class="card-title maintitle">CONTROL VALVE</h4>
+      <p class="card-text cardmaintext">PLUNGER FLOW CONTROL VALVE High-performance industrial pumps
+        for various applications, including water supply, wastewater management, and chemical
+        processing.</p>
+      <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+      <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4" data-name="GATE VALVES">
+
+  <div class="card maincard">
+    <img class="cardimage" src="/img/product 3.jpg" alt="Card image">
+    <div class="card-body">
+      <h5 class="cardbluetext">Diaphragm Actuated</h5>
+      <h4 class="card-title maintitle">AUTOMATIC CONTROL VALVE</h4>
+      <p class="card-text cardmaintext">A diaphragm-actuated automatic control valve is designed to
+        automatically regulate pressure, flow rate, or liquid level in piping systems. It uses a
+        flexible diaphragm that reacts to pressure or control signals.</p>
+      <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+      <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 4.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Metal Seated</h5>
+        <h4 class="card-title maintitle">GATE VALVE</h4>
+        <p class="card-text cardmaintext">A Metal Seated Gate Valve is designed to control the flow of
+          fluids by lifting or lowering a solid metal gate. It uses metal-to-metal sealing surfaces,
+          offering durability and resistance to wear.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 " data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 5.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Wafer Type</h5>
+        <h4 class="card-title maintitle">CENTRIC BUTTERFLY VALVE</h4>
+        <p class="card-text cardmaintext">A Centric Butterfly Valve – Wafer Type is a compact and
+          lightweight flow control device designed with a centrally-mounted disc and symmetric
+          sealing. The disc rotates around a central axis within the valve body, allowing for
+          efficient on/off or throttling control of fluids.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 6.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Lug Type</h5>
+        <h4 class="card-title maintitle">CENTRIC BUTTERFLY VALVE</h4>
+        <p class="card-text cardmaintext">A Centric Butterfly Valve – Lug Type is a versatile flow
+          control device featuring a centrally positioned disc that rotates within the flow path to
+          regulate or isolate fluid flow. Designed with threaded lugs on the valve body, this type
+          allows the valve to be bolted directly to pipe flanges.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 7.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">U Section Type</h5>
+        <h4 class="card-title maintitle">CENTRIC BUTTERFLY VALVE</h4>
+        <p class="card-text cardmaintext">RThe Centric Butterfly Valve – U Section Type is a
+          resilient-seated valve designed for efficient fluid control in pipelines. It features a
+          centrally mounted disc aligned with the centerline of both the pipe and the valve body,
+          ensuring low torque operation and reliable sealing</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 " data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 8.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Rubber Type</h5>
+        <h4 class="card-title maintitle">SWING CHECK VALVE</h4>
+        <p class="card-text cardmaintext">A Swing Check Valve with rubber lining uses a rubber-faced
+          disc that swings open with forward flow and closes tightly to prevent backflow. Durable,
+          corrosion-resistant, and low-maintenance.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 9.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Valve</h5>
+        <h4 class="card-title maintitle">BALL CHECK VALVE</h4>
+        <p class="card-text cardmaintext">This valve features a rubber-coated or metal ball that moves
+          freely to block reverse flow. Its simple, self-cleaning design ensures low maintenance and
+          reliable operation.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 10.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Wafer Type</h5>
+        <h4 class="card-title maintitle">SINGLE FLAP CHECK VALVE</h4>
+        <p class="card-text cardmaintext">A Single Flap Compact and lightweight, this valve uses a
+          single disc that opens with forward flow and closes rapidly to prevent backflow, ensuring
+          efficient fluid control.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 " data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 11.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Wafer Type</h5>
+        <h4 class="card-title maintitle">DUAL PLATE CHECK VALVE</h4>
+        <p class="card-text cardmaintext">Also known as a double-door check valve, it features two
+          spring-loaded plates that open with forward flow and close quickly to prevent backflow. It
+          is ideal for use in oil, gas, and water pipeline applications.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4" data-name="GATE VALVES">
+
+    <div class="card maincard">
+      <img class="cardimage" src="/img/product 12.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="cardbluetext">Check Valve</h5>
+        <h4 class="card-title maintitle">GLOBE</h4>
+        <p class="card-text cardmaintext">A Globe Check Valve is a one-way valve that prevents reverse
+          flow using a movable disc. It offers reliable sealing and is suitable for high-pressure and
+          high-temperature systems.</p>
+        <a href="#" class="btn btn-primary detailsbtn" data-bs-toggle="modal" data-bs-target="#myModal">View Details</a>
+        <i class="fa fa-arrow-right ml-1 rightarrow"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
